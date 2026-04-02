@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://adaaIorlumun-Automation.github.io/Market-Intelligence-Hub",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --repo https://github.com/adaaIorlumun-Automation/Market-Intelligence-Hub.git"
   },
   "dependencies": {
     "react": "^19.2.4",
@@ -21,6 +24,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "gh-pages": "^6.3.0",
     "globals": "^17.4.0",
     "tailwindcss": "^4.2.2",
     "vite": "^8.0.3"
